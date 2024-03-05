@@ -1,4 +1,9 @@
 public class Cliente{
-    public string nome {get; set;}
-    public string cpf {get; set;}
+    public string Nome {get; set;}
+    public string Cpf {get; set;}
+
+    public Cliente(){
+        Nome = "";
+        Cpf = ""; 
+    }
 } 

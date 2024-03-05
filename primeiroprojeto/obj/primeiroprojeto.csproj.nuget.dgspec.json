@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\autologon\\Documents\\Topicos_especiais_de_sistema\\primeiroprojeto\\primeiroprojeto.csproj": {}
+    "c:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\C#\\primeiroProjeto\\Topicos_especiais_de_sistema\\primeiroprojeto\\primeiroprojeto.csproj": {}
   },
   "projects": {
-    "c:\\Users\\autologon\\Documents\\Topicos_especiais_de_sistema\\primeiroprojeto\\primeiroprojeto.csproj": {
+    "c:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\C#\\primeiroProjeto\\Topicos_especiais_de_sistema\\primeiroprojeto\\primeiroprojeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\autologon\\Documents\\Topicos_especiais_de_sistema\\primeiroprojeto\\primeiroprojeto.csproj",
+        "projectUniqueName": "c:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\C#\\primeiroProjeto\\Topicos_especiais_de_sistema\\primeiroprojeto\\primeiroprojeto.csproj",
         "projectName": "primeiroprojeto",
-        "projectPath": "c:\\Users\\autologon\\Documents\\Topicos_especiais_de_sistema\\primeiroprojeto\\primeiroprojeto.csproj",
-        "packagesPath": "C:\\Users\\autologon\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\autologon\\Documents\\Topicos_especiais_de_sistema\\primeiroprojeto\\obj\\",
+        "projectPath": "c:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\C#\\primeiroProjeto\\Topicos_especiais_de_sistema\\primeiroprojeto\\primeiroprojeto.csproj",
+        "packagesPath": "C:\\Users\\Luisa\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\C#\\primeiroProjeto\\Topicos_especiais_de_sistema\\primeiroprojeto\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\autologon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Luisa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,12 +53,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
