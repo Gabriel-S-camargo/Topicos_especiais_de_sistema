@@ -1,0 +1,15 @@
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\bin\Debug\net7.0\primeiroprojeto.exe
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\bin\Debug\net7.0\primeiroprojeto.deps.json
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\bin\Debug\net7.0\primeiroprojeto.runtimeconfig.json
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\bin\Debug\net7.0\primeiroprojeto.dll
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\bin\Debug\net7.0\primeiroprojeto.pdb
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\primeiroprojeto.csproj.AssemblyReference.cache
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\primeiroprojeto.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\primeiroprojeto.AssemblyInfoInputs.cache
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\primeiroprojeto.AssemblyInfo.cs
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\primeiroprojeto.csproj.CoreCompileInputs.cache
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\primeiroprojeto.dll
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\refint\primeiroprojeto.dll
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\primeiroprojeto.pdb
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\primeiroprojeto.genruntimeconfig.cache
+c:\Users\autologon\Documents\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\ref\primeiroprojeto.dll
