@@ -5,6 +5,9 @@
 
 Cliente objCliente = new Cliente();
 
+produtos objprodutos = new produtos();
+
+objprodutos = "Coca-Cola 2L"
 objCliente.nome = "Pedro";
 objCliente.cpf = "888";
 
@@ -12,6 +15,6 @@ Console.WriteLine(objCliente.nome);
 
 Console.WriteLine("Hello, World!");
 
-Console.WriteLine("teste");
+Console.WriteLine(objprodutos.nome);
 
 
