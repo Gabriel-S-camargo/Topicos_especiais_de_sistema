@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VnCg4GYiVPLK6ZaWdYcJ1q3jrNmcIe99ATIkutYtWz3vMwPPfOQaNcVeW/5JO/pYlImy97n8F3K7KXInljRDyg==",
+  "dgSpecHash": "tPpppfsafUw7yjTo7pyGuH2c01lhu6Vm2kQrhg9MJI5DFpNweCWNmWzQVAMB+dUd8zibeyOgKH8o3ifuPepsog==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\C#\\primeiroProjeto\\Topicos_especiais_de_sistema\\primeiroprojeto\\primeiroprojeto.csproj",
+  "projectFilePath": "C:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\Topicos_especiais_de_sistema\\primeiroprojeto\\primeiroprojeto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luisa\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
     "C:\\Users\\Luisa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
