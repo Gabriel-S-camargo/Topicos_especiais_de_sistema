@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "/wZg6JgmeNQ8Gfp86VDjBtRKR9klYA+jMgv0pvu19pnuAbh8yOQPxUV7WyzSM/T+fIdb4JUlckfxf/FuAcUSPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\Topicos_especiais_de_sistema\\aula01\\primeiroprojeto.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Luisa\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\Luisa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\Luisa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\Luisa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.16\\microsoft.netcore.app.host.win-x64.7.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
