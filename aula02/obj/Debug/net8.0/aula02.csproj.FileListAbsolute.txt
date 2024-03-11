@@ -1,0 +1,15 @@
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\obj\Debug\net8.0\aula02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\obj\Debug\net8.0\aula02.AssemblyInfoInputs.cache
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\obj\Debug\net8.0\aula02.AssemblyInfo.cs
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\obj\Debug\net8.0\aula02.csproj.CoreCompileInputs.cache
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\obj\Debug\net8.0\aula02.sourcelink.json
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\bin\Debug\net8.0\aula02.exe
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\bin\Debug\net8.0\aula02.deps.json
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\bin\Debug\net8.0\aula02.runtimeconfig.json
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\bin\Debug\net8.0\aula02.dll
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\bin\Debug\net8.0\aula02.pdb
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\obj\Debug\net8.0\aula02.dll
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\obj\Debug\net8.0\refint\aula02.dll
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\obj\Debug\net8.0\aula02.pdb
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\obj\Debug\net8.0\aula02.genruntimeconfig.cache
+C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\aula02\obj\Debug\net8.0\ref\aula02.dll
