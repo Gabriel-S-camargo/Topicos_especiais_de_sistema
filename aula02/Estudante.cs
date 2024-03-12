@@ -5,7 +5,6 @@ public class Estudante {
         this.Rgm = Rgm;
         this.Nome = Nome;
     }
-
     public string Nome {get;set;}
     public string Rgm {get;set;}
 
