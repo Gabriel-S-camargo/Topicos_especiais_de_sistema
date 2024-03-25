@@ -1,28 +1,14 @@
-﻿
-// Instanciar uma Universidade
+﻿Curso curso01= new Curso();
+Turma turma01 = new Turma();
 
-Universidade objUniversidade = new Universidade();
+curso01.nome = "ADS";
+curso01.duracao = 2;
 
-objUniversidade.nome = "Universidade Positivo";
-objUniversidade.localizacao = "Ecoville";
-objUniversidade.anoFundacao = 1990;
+turma01.anoFormacao = 2025;
+turma01.turno = "Noturno";
 
-// Criar o curso 'ADS' e adicionar dentro da universidade o Curso
+curso01.adicionarTurma(turma01);
 
-Curso objCurso = new Curso();
-
-objCurso.nome = "ADS";
-
-objUniversidade.adicionarCurso(objCurso);
-
-// Criar o curso 'BSI' e adicionar dentro da universidade o Curso
-objCurso = new Curso();
-objCurso.nome = "BSI";
-objUniversidade.adicionarCurso(objCurso);
-
-Console.WriteLine(objUniversidade.nome);
-
-foreach(var curso in objUniversidade.cursos){
-    Console.WriteLine(curso.nome);
-    
+foreach(var turma in curso01.turmas){
+    Console.WriteLine(turma.turno);
 }
