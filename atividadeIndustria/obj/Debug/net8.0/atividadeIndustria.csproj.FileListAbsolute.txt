@@ -1,0 +1,5 @@
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\atividadeIndustria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\atividadeIndustria.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\atividadeIndustria.AssemblyInfo.cs
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\atividadeIndustria.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\atividadeIndustria.sourcelink.json
