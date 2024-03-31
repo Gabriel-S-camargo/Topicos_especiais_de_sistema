@@ -3,3 +3,13 @@ C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndus
 C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\atividadeIndustria.AssemblyInfo.cs
 C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\atividadeIndustria.csproj.CoreCompileInputs.cache
 C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\atividadeIndustria.sourcelink.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\bin\Debug\net8.0\atividadeIndustria.exe
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\bin\Debug\net8.0\atividadeIndustria.deps.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\bin\Debug\net8.0\atividadeIndustria.runtimeconfig.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\bin\Debug\net8.0\atividadeIndustria.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\bin\Debug\net8.0\atividadeIndustria.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\atividadeIndustria.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\refint\atividadeIndustria.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\atividadeIndustria.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\atividadeIndustria.genruntimeconfig.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadeIndustria\obj\Debug\net8.0\ref\atividadeIndustria.dll

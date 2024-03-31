@@ -2,16 +2,16 @@
 
 public class Industria{
 
-    public string nome {get;set;}
-    public string localizacao{get;set;}
+    public string nomeIndustria{get;set;} = string.Empty;
+    public string localizacao{get;set;} = string.Empty;
     public int anoFundacao{get;set;}
 
     public List<LinhaProducao> linhasProducao = new List<LinhaProducao>();
 
-    public void exibirInfo(){
-        console.WriteLine("Nome da industria: " + this.nome);
-        console.WriteLine("Localizacão: " + this.localizacao);
-        console.WriteLine("Ano de Fundação: " + this.anoFundacao);
+    public void exibirInfoIndustria(){
+        Console.WriteLine("\nNome da industria: " + this.nomeIndustria);
+        Console.WriteLine("Localizacão: " + this.localizacao);
+        Console.WriteLine("Ano de Fundação: " + this.anoFundacao);
     }
 
     public void adicionarLinhaProducao(LinhaProducao lP){

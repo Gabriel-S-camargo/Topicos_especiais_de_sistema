@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Luisa\\.nuget\\packages\\": {}
+    "C:\\Users\\gabri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\Topicos_especiais_de_sistema\\aula03\\aula03.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\aula03\\aula03.csproj",
       "projectName": "aula03",
-      "projectPath": "C:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\Topicos_especiais_de_sistema\\aula03\\aula03.csproj",
-      "packagesPath": "C:\\Users\\Luisa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\Topicos_especiais_de_sistema\\aula03\\obj\\",
+      "projectPath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\aula03\\aula03.csproj",
+      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\aula03\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Luisa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
