@@ -72,14 +72,14 @@ produto04.preco = 16.90;
 
 // Adicionando com o métodos
 
-// Industria
+// adicionar linhas de produção na Industria
 
 industria01.adicionarLinhaProducao(linhaProducao01);
 
 industria01.adicionarLinhaProducao(linhaProducao02);
 
 
-// Linhas de produção
+// Adicionar maquinas nas Linhas de produção
 
 linhaProducao01.adicionarMaquina(maquina01);
 
@@ -88,6 +88,16 @@ linhaProducao01.adicionarMaquina(maquina02);
 linhaProducao02.adicionarMaquina(maquina03);
 
 linhaProducao02.adicionarMaquina(maquina04);
+
+// Adicionar produto para cada máquina
+
+maquina01.adicionarProduto(produto01);
+
+maquina02.adicionarProduto(produto02);
+
+maquina03.adicionarProduto(produto03);
+
+maquina04.adicionarProduto(produto04);
 
 // teste de métodos
 
@@ -122,3 +132,11 @@ produto03.exibirInfoProduto();
 produto04.exibirInfoProduto();
 
 // Iniciar producao da maquina
+
+maquina01.iniciarProducao();
+
+maquina02.iniciarProducao();
+
+maquina03.iniciarProducao();
+
+maquina04.iniciarProducao();
