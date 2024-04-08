@@ -1,0 +1,15 @@
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\obj\Debug\net8.0\aula05-heranca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\obj\Debug\net8.0\aula05-heranca.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\obj\Debug\net8.0\aula05-heranca.AssemblyInfo.cs
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\obj\Debug\net8.0\aula05-heranca.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\obj\Debug\net8.0\aula05-heranca.sourcelink.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\bin\Debug\net8.0\aula05-heranca.exe
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\bin\Debug\net8.0\aula05-heranca.deps.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\bin\Debug\net8.0\aula05-heranca.runtimeconfig.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\bin\Debug\net8.0\aula05-heranca.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\bin\Debug\net8.0\aula05-heranca.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\obj\Debug\net8.0\aula05-heranca.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\obj\Debug\net8.0\refint\aula05-heranca.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\obj\Debug\net8.0\aula05-heranca.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\obj\Debug\net8.0\aula05-heranca.genruntimeconfig.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula05-heranca\obj\Debug\net8.0\ref\aula05-heranca.dll
