@@ -1,0 +1,15 @@
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\obj\Debug\net8.0\atividadePoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\obj\Debug\net8.0\atividadePoo.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\obj\Debug\net8.0\atividadePoo.AssemblyInfo.cs
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\obj\Debug\net8.0\atividadePoo.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\obj\Debug\net8.0\atividadePoo.sourcelink.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\bin\Debug\net8.0\atividadePoo.exe
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\bin\Debug\net8.0\atividadePoo.deps.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\bin\Debug\net8.0\atividadePoo.runtimeconfig.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\bin\Debug\net8.0\atividadePoo.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\bin\Debug\net8.0\atividadePoo.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\obj\Debug\net8.0\atividadePoo.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\obj\Debug\net8.0\refint\atividadePoo.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\obj\Debug\net8.0\atividadePoo.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\obj\Debug\net8.0\atividadePoo.genruntimeconfig.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePoo\obj\Debug\net8.0\ref\atividadePoo.dll

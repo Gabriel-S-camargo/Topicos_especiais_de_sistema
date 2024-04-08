@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "atividadePoo/1.0.0": {
+        "runtime": {
+          "atividadePoo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "atividadePoo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
