@@ -1,0 +1,15 @@
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\obj\Debug\net8.0\questao02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\obj\Debug\net8.0\questao02.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\obj\Debug\net8.0\questao02.AssemblyInfo.cs
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\obj\Debug\net8.0\questao02.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\obj\Debug\net8.0\questao02.sourcelink.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\bin\Debug\net8.0\questao02.exe
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\bin\Debug\net8.0\questao02.deps.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\bin\Debug\net8.0\questao02.runtimeconfig.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\bin\Debug\net8.0\questao02.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\bin\Debug\net8.0\questao02.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\obj\Debug\net8.0\questao02.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\obj\Debug\net8.0\refint\questao02.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\obj\Debug\net8.0\questao02.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\obj\Debug\net8.0\questao02.genruntimeconfig.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao02\obj\Debug\net8.0\ref\questao02.dll
