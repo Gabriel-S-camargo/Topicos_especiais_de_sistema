@@ -1,0 +1,15 @@
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\obj\Debug\net8.0\questao01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\obj\Debug\net8.0\questao01.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\obj\Debug\net8.0\questao01.AssemblyInfo.cs
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\obj\Debug\net8.0\questao01.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\obj\Debug\net8.0\questao01.sourcelink.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\bin\Debug\net8.0\questao01.exe
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\bin\Debug\net8.0\questao01.deps.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\bin\Debug\net8.0\questao01.runtimeconfig.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\bin\Debug\net8.0\questao01.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\bin\Debug\net8.0\questao01.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\obj\Debug\net8.0\questao01.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\obj\Debug\net8.0\refint\questao01.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\obj\Debug\net8.0\questao01.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\obj\Debug\net8.0\questao01.genruntimeconfig.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\heranca_atividades\questao01\obj\Debug\net8.0\ref\questao01.dll
