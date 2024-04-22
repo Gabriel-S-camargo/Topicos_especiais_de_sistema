@@ -1,0 +1,15 @@
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\obj\Debug\net8.0\polimorfismo_atividade.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\obj\Debug\net8.0\polimorfismo_atividade.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\obj\Debug\net8.0\polimorfismo_atividade.AssemblyInfo.cs
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\obj\Debug\net8.0\polimorfismo_atividade.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\obj\Debug\net8.0\polimorfismo_atividade.sourcelink.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\bin\Debug\net8.0\polimorfismo_atividade.exe
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\bin\Debug\net8.0\polimorfismo_atividade.deps.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\bin\Debug\net8.0\polimorfismo_atividade.runtimeconfig.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\bin\Debug\net8.0\polimorfismo_atividade.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\bin\Debug\net8.0\polimorfismo_atividade.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\obj\Debug\net8.0\polimorfismo_atividade.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\obj\Debug\net8.0\refint\polimorfismo_atividade.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\obj\Debug\net8.0\polimorfismo_atividade.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\obj\Debug\net8.0\polimorfismo_atividade.genruntimeconfig.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\polimorfismo_atividade\obj\Debug\net8.0\ref\polimorfismo_atividade.dll
