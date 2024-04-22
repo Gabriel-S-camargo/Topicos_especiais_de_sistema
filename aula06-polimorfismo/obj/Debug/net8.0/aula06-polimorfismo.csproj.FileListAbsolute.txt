@@ -1,0 +1,15 @@
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\bin\Debug\net8.0\aula06-polimorfismo.exe
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\bin\Debug\net8.0\aula06-polimorfismo.deps.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\bin\Debug\net8.0\aula06-polimorfismo.runtimeconfig.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\bin\Debug\net8.0\aula06-polimorfismo.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\bin\Debug\net8.0\aula06-polimorfismo.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\obj\Debug\net8.0\aula06-polimorfismo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\obj\Debug\net8.0\aula06-polimorfismo.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\obj\Debug\net8.0\aula06-polimorfismo.AssemblyInfo.cs
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\obj\Debug\net8.0\aula06-polimorfismo.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\obj\Debug\net8.0\aula06-polimorfismo.sourcelink.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\obj\Debug\net8.0\aula06-polimorfismo.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\obj\Debug\net8.0\refint\aula06-polimorfismo.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\obj\Debug\net8.0\aula06-polimorfismo.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\obj\Debug\net8.0\aula06-polimorfismo.genruntimeconfig.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula06-polimorfismo\obj\Debug\net8.0\ref\aula06-polimorfismo.dll
