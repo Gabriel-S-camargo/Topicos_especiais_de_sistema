@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("atividadePedagioInterface")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49a9d451ea86632f6b0ef49bee429a8ccec2130d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a2064790b82152a5353a54ad774b4cf0e180f1d")]
 [assembly: System.Reflection.AssemblyProductAttribute("atividadePedagioInterface")]
 [assembly: System.Reflection.AssemblyTitleAttribute("atividadePedagioInterface")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
