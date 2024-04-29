@@ -1,0 +1,15 @@
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\obj\Debug\net8.0\atividadePedagioInterface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\obj\Debug\net8.0\atividadePedagioInterface.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\obj\Debug\net8.0\atividadePedagioInterface.AssemblyInfo.cs
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\obj\Debug\net8.0\atividadePedagioInterface.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\obj\Debug\net8.0\atividadePedagioInterface.sourcelink.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\bin\Debug\net8.0\atividadePedagioInterface.exe
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\bin\Debug\net8.0\atividadePedagioInterface.deps.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\bin\Debug\net8.0\atividadePedagioInterface.runtimeconfig.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\bin\Debug\net8.0\atividadePedagioInterface.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\bin\Debug\net8.0\atividadePedagioInterface.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\obj\Debug\net8.0\atividadePedagioInterface.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\obj\Debug\net8.0\refint\atividadePedagioInterface.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\obj\Debug\net8.0\atividadePedagioInterface.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\obj\Debug\net8.0\atividadePedagioInterface.genruntimeconfig.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\atividadePedagioInterface\obj\Debug\net8.0\ref\atividadePedagioInterface.dll
