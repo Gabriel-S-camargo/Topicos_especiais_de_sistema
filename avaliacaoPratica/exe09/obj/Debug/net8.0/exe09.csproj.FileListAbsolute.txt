@@ -1,0 +1,15 @@
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\obj\Debug\net8.0\exe09.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\obj\Debug\net8.0\exe09.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\obj\Debug\net8.0\exe09.AssemblyInfo.cs
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\obj\Debug\net8.0\exe09.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\obj\Debug\net8.0\exe09.sourcelink.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\bin\Debug\net8.0\exe09.exe
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\bin\Debug\net8.0\exe09.deps.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\bin\Debug\net8.0\exe09.runtimeconfig.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\bin\Debug\net8.0\exe09.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\bin\Debug\net8.0\exe09.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\obj\Debug\net8.0\exe09.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\obj\Debug\net8.0\refint\exe09.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\obj\Debug\net8.0\exe09.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\obj\Debug\net8.0\exe09.genruntimeconfig.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe09\obj\Debug\net8.0\ref\exe09.dll
