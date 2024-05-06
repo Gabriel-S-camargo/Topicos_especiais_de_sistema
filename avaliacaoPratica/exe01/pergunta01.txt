@@ -1,0 +1,55 @@
+AI Utilizada -> Perplexity 
+
+Prompt -> "Estou realizando atividades ligadas a conceitos de orientação a objetos em C#,  voce poderiam explicar o que é herança em orientação a objetos e como ela é implementada
+em C#. Dê um exemplo prático de como a herança pode ser utilizada em um
+sistema de gerenciamento de funcionários."
+
+
+Herança em Orientação a Objetos
+A herança em orientação a objetos é um conceito fundamental que permite que uma classe (chamada de classe derivada ou subclasse) herde características e comportamentos de outra classe (chamada de classe base ou superclasse). Isso significa que a classe derivada pode reutilizar e estender os atributos e métodos da classe base, promovendo a reutilização de código e facilitando a organização e manutenção do sistema.
+Implementação da Herança em C#
+Em C#, a herança é implementada utilizando a palavra-chave class seguida do nome da classe derivada, seguida por : e o nome da classe base. Por exemplo:
+
+//-----------------------//
+
+class Funcionario
+{
+    public string Nome { get; set; }
+    public double Salario { get; set; }
+}
+
+class Gerente : Funcionario
+{
+    public string Departamento { get; set; }
+}
+
+//-----------------------//
+
+Neste exemplo, a classe Gerente herda as propriedades Nome e Salario da classe Funcionario.
+Exemplo Prático de Utilização da Herança em um Sistema de Gerenciamento de Funcionários
+Imagine um sistema de gerenciamento de funcionários onde temos diferentes tipos de funcionários, como Gerente, Desenvolvedor, e Analista. Utilizando herança, podemos criar uma classe base Funcionario com atributos comuns a todos os funcionários, como nome e salário, e então criar classes derivadas para cada tipo específico de funcionário, adicionando atributos e comportamentos específicos.
+
+//-----------------------//
+
+class Funcionario
+{
+    public string Nome { get; set; }
+    public double Salario { get; set; }
+}
+
+class Gerente : Funcionario
+{
+    public string Departamento { get; set; }
+}
+
+class Desenvolvedor : Funcionario
+{
+    public string Linguagem { get; set; }
+}
+
+class Analista : Funcionario
+{
+    public string Area { get; set; }
+}
+
+//-----------------------//

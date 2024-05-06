@@ -1,0 +1,50 @@
+AI Utilizada -> Perplexity 
+
+prompt -> "Estou realizando atividades ligadas a conceitos de orientação a objetos em C#, voce poderia me explicar interfaces em orientação a objetos e qual é a sua importância na
+construção de sistemas em C#, juntamente com um exemplo em codigo de uso de interfaces entre diferentes classes em um sistema de pagamento online"
+
+Interfaces em C# são semelhantes a classes abstratas, mas com diferenças importantes. Elas definem um conjunto de membros (propriedades, métodos, eventos) que devem ser implementados por classes que a utilizam, promovendo contratos entre classes, reduzindo dependências e facilitando o polimorfismo. As interfaces não possuem implementação e podem ser implementadas por várias classes, permitindo um design mais modular e reutilizável. Um exemplo prático de uso de interfaces em C# pode ser visto em um sistema de pagamento online, onde diferentes classes, como CartaoCredito e PayPal, implementam uma interface IMetodoPagamento que define métodos como ProcessarPagamento() e CancelarPagamento(). Isso permite que o sistema trate objetos dessas classes de forma uniforme, facilitando a manutenção e extensão do código.
+
+//-----------------------//
+
+prompt ->"Voce poderia escrever um programa simples em C# com esse exemplo em codigo"
+
+//-----------------------//
+
+// Interface que define os métodos de pagamento
+
+public interface IMetodoPagamento
+{
+    void ProcessarPagamento();
+    void CancelarPagamento();
+}
+
+// Classe que representa um pagamento com cartão de crédito
+
+public class CartaoCredito : IMetodoPagamento
+{
+    public void ProcessarPagamento()
+    {
+        Console.WriteLine("Pagamento com cartão de crédito processado.");
+    }
+
+    public void CancelarPagamento()
+    {
+        Console.WriteLine("Pagamento com cartão de crédito cancelado.");
+    }
+}
+
+// Classe que representa um pagamento com PayPal
+
+public class PayPal : IMetodoPagamento
+{
+    public void ProcessarPagamento()
+    {
+        Console.WriteLine("Pagamento com PayPal processado.");
+    }
+
+    public void CancelarPagamento()
+    {
+        Console.WriteLine("Pagamento com PayPal cancelado.");
+    }
+}

@@ -1,0 +1,41 @@
+Para distinguir entre sobrecarga e sobreposição (ou sobrescrita) em C#, é essencial compreender que a sobrecarga de método permite definir vários métodos com o mesmo nome, mas com parâmetros diferentes. Por exemplo, na sobrecarga, você pode ter métodos com o mesmo nome, mas com tipos de parâmetros distintos, o que é permitido e útil para fornecer funcionalidades diferentes com o mesmo nome de método. Por outro lado, a sobreposição ocorre quando uma classe derivada fornece uma implementação específica de um método que já está definido em sua classe base. Isso permite que o método na classe derivada substitua o método na classe base, alterando sua implementação.
+Exemplos em C#:
+
+//-----------------------//
+
+Sobrecarga de Método:
+
+public int Somar(int a, int b) 
+{
+    return a + b;
+}
+
+public double Somar(double a, double b) 
+{
+    return a + b;
+}
+
+//-----------------------//
+
+Sobreposição de Método:
+
+
+
+public class carro 
+{
+    public virtual void EmitirSom() 
+    {
+        Console.WriteLine("O animal emite um som.");
+    }
+}
+
+public class Cachorro : Animal 
+{
+    public override void EmitirSom() 
+    {
+        Console.WriteLine("O cachorro late.");
+    }
+}
+
+//-----------------------//
+
