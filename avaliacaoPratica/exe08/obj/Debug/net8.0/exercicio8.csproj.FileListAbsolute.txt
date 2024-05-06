@@ -1,0 +1,14 @@
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\bin\Debug\net8.0\exercicio8.exe
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\bin\Debug\net8.0\exercicio8.deps.json
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\bin\Debug\net8.0\exercicio8.runtimeconfig.json
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\bin\Debug\net8.0\exercicio8.dll
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\bin\Debug\net8.0\exercicio8.pdb
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\obj\Debug\net8.0\exercicio8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\obj\Debug\net8.0\exercicio8.AssemblyInfoInputs.cache
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\obj\Debug\net8.0\exercicio8.AssemblyInfo.cs
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\obj\Debug\net8.0\exercicio8.csproj.CoreCompileInputs.cache
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\obj\Debug\net8.0\exercicio8.dll
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\obj\Debug\net8.0\refint\exercicio8.dll
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\obj\Debug\net8.0\exercicio8.pdb
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\obj\Debug\net8.0\exercicio8.genruntimeconfig.cache
+C:\Users\M_kal\OneDrive\Área de Trabalho\C#\entrega2C#\exercicio8\obj\Debug\net8.0\ref\exercicio8.dll

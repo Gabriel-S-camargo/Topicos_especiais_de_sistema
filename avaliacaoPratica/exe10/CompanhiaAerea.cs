@@ -37,7 +37,7 @@ public class CompanhiaAerea
         {
 
             this.reservado = false;
-            Console.WriteLine("Este voo não possui reservas");
+            Console.WriteLine("Voo cancelado");
             reserva.cancelarVoo();
 
         }

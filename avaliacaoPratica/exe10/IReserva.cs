@@ -1,6 +1,7 @@
 public interface IReserva {
 
-    public void reservarVoo();
-    public void cancelarVoo();
+    public bool reservarVoo();
+    public bool cancelarVoo();
+    public void mostrarInfo();
 
 }

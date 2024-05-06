@@ -1,0 +1,15 @@
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\obj\Debug\net8.0\exe10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\obj\Debug\net8.0\exe10.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\obj\Debug\net8.0\exe10.AssemblyInfo.cs
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\obj\Debug\net8.0\exe10.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\obj\Debug\net8.0\exe10.sourcelink.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\bin\Debug\net8.0\exe10.exe
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\bin\Debug\net8.0\exe10.deps.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\bin\Debug\net8.0\exe10.runtimeconfig.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\bin\Debug\net8.0\exe10.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\bin\Debug\net8.0\exe10.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\obj\Debug\net8.0\exe10.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\obj\Debug\net8.0\refint\exe10.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\obj\Debug\net8.0\exe10.pdb
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\obj\Debug\net8.0\exe10.genruntimeconfig.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\avaliacaoPratica\exe10\obj\Debug\net8.0\ref\exe10.dll
