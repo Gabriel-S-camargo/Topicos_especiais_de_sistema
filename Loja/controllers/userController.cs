@@ -1,4 +1,3 @@
-namespace loja.controllers;
 public class UserController
 {
     public string UserLogin { get; set; }
