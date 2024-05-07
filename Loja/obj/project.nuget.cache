@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uXp5SxDKH5LuOOFzIFKy/Wu/imW9ULNCzUf0Yc5SS/gzn+JXXHsb3L+iJHBXvUqEzp7sjf71GrlZXNrGk/VLRw==",
+  "dgSpecHash": "JydOmhrivjp2rn+oG8xDlx6nKN+WWferLDCt/Np/WJTO0IU2gm6ga7jsK+hErYPU02KSfKfIxWYyypkRVA9jWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\loja\\loja.csproj",
+  "projectFilePath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\loja.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.3\\microsoft.aspnetcore.openapi.8.0.3.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
