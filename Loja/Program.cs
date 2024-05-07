@@ -16,9 +16,9 @@ app.MapPost("/login", async (HttpContext context) =>
     var body = await reader.ReadToEndAsync();
 
     // Desserializar o objeto JSON
-    var json = System.Text.Json.JsonDocument.Parse(body);
-    var userLogin = json.RootElement.GetProperty("userLogin").GetString();
-    var userPassword = json.RootElement.GetProperty("userPassword").GetString();
+    var user = System.Text.Json.JsonDocument.Parse(body);
+    var userLogin = user.RootElement.GetProperty("userLogin").GetString();
+    var userPassword = user.RootElement.GetProperty("userPassword").GetString();
 
     UserController user01 = new UserController(userLogin, userPassword);
 
