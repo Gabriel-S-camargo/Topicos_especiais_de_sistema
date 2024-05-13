@@ -1,4 +1,4 @@
-namespace UserController;
+namespace Loja.controllers;
 
 public class UserController
 {

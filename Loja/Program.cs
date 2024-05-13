@@ -1,5 +1,5 @@
 using System.Text.Json;
-using Loja.UserController;
+using Loja.controllers;
 using Microsoft.AspNetCore.Authentication;
 
 var builder = WebApplication.CreateBuilder(args);
