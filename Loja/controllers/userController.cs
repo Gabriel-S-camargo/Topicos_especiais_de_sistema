@@ -1,3 +1,5 @@
+namespace UserController;
+
 public class UserController
 {
     public string UserLogin { get; set; }
