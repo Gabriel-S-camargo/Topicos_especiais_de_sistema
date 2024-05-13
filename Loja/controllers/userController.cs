@@ -11,7 +11,7 @@ public class UserController
         UserPassword = userPassword;
     }
 
-    public bool Login()
+    public bool Login(string UserLogin, String UserPassaword)
     {
         if (UserLogin == "admin" && UserPassword == "abc")
         {

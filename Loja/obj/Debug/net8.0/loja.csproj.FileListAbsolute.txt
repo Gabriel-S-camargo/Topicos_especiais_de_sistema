@@ -32,3 +32,11 @@ C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\obj\Debug
 C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\obj\Debug\net8.0\loja.pdb
 C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\obj\Debug\net8.0\loja.genruntimeconfig.cache
 C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\obj\Debug\net8.0\ref\loja.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\loja\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

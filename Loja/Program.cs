@@ -11,6 +11,8 @@ var app = builder.Build();
 // builder.Services.AddSwaggerGen();
 // Configure the HTTP request pipeline.
 
+app.UseHttpsRedirection();
+
 app.MapPost("/login", async (HttpContext context) =>
 {
     // Receber a request do Body
@@ -21,21 +23,24 @@ app.MapPost("/login", async (HttpContext context) =>
 
     // Desserializar o objeto JSON
     var user = System.Text.Json.JsonDocument.Parse(body);
+
     var userLogin = user.RootElement.GetProperty("userLogin").GetString();
     var userPassword = user.RootElement.GetProperty("userPassword").GetString();
+    
+        UserController user01 = new UserController(userLogin, userPassword);
 
-    UserController user01 = new UserController(userLogin, userPassword);
+    return user01.Login(userLogin, userPassword);
 
-    if (!user01.Login())
-    {
-        
-        await context.Response.WriteAsync("Erro! Usuário ou senha inválidos");
-    }
-    else
-    {
-        
-        await context.Response.WriteAsync("Bem-vindo " + userLogin);
-    }
+    // if (!user01.Login(userLogin, userPassword))
+    // {
+
+    //     await context.Response.WriteAsync("Erro! Usuário ou senha inválidos");
+    // }
+    // else
+    // {
+
+    //     await context.Response.WriteAsync("Bem-vindo " + userLogin);
+    // }
 });
 app.Run();
 
