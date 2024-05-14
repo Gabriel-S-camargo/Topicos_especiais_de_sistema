@@ -55,7 +55,7 @@ app.MapPost("/login", async (HttpContext context) =>
         token = GenerateToken(userLogin);
     }
 
-    return UserController.Login(userLogin, userPassword);
+    return token;
 });
 
 // Método de criação do token
