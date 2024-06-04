@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj": {}
+    "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\loja\\Loja.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj": {
+    "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\loja\\Loja.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\loja\\Loja.csproj",
         "projectName": "Loja",
-        "projectPath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj",
+        "projectPath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\loja\\Loja.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\loja\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
