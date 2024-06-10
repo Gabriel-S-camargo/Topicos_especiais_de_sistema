@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 // Starta Conexão Com o BD 
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<LojaDbContext>(options=>options.UseMySql(connectionString, new MySqlServerVersion(new Version(8,0,37))));
+builder.Services.AddDbContext<LojaDbContext>(options => options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 37))));
 
 var app = builder.Build();
 
@@ -20,11 +20,22 @@ var app = builder.Build();
 
 app.UseHttpsRedirection();
 
-app.MapPost("/criarproduto", async(LojaDbContext dbContext, Produto newProduto)=>{
+// Esse MapPost Cria um produto no Banco de Dados
+
+app.MapPost("/criarproduto", async (LojaDbContext dbContext, Produto newProduto) =>
+{
     dbContext.Produtos.Add(newProduto);
     await dbContext.SaveChangesAsync();
 
     return Results.Created($"/criarproduto/{newProduto.Id}", newProduto);
+});
+
+//Esse MapGet pega os registros na tabela Produtos
+
+app.MapGet("/produtos", async (LojaDbContext dbContext) =>
+{
+    var produtos = await dbContext.Produtos.ToListAsync();
+    return Results.Ok(produtos);
 });
 
 app.Run();
