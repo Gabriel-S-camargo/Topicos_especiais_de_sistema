@@ -38,6 +38,51 @@ app.MapGet("/produtos", async (LojaDbContext dbContext) =>
     return Results.Ok(produtos);
 });
 
+// Esse mapGet pega produtos pelo ID a partir da url e retorna mensagem de erro caso não se achado
+
+app.MapGet("/produto/{id}", async (int id, LojaDbContext dbContext) =>
+{
+    var produto = await dbContext.Produtos.FindAsync(id);
+
+    if (produto == null)
+    {
+        return Results.NotFound($"Produto com o ID {id} not found");
+    }
+
+    return Results.Ok(produto);
+});
+
+// Esse mapPut atualiza um registro no Banco de Dados com novas informações
+
+app.MapPut("/produtos/{id}", async (int id, LojaDbContext dbContext, Produto updateProduto) =>
+{
+    //Verifica se o Produto passado na URL existe
+
+    var existingProduto = await dbContext.Produtos.FindAsync(id);
+
+    if(existingProduto == null){
+        return Results.NotFound($"Produto com o ID {id} not found");
+    }
+
+    // Depois de testado ele vai fazer as alterações no Banco de Dados
+    // Atualiza as infos a partir da requisição no Body do JSON
+    // aqui ele pega o Objeto que é do produto existente e atualiza a partir dos valores dos atributos do updateProduto que esta recebendo os valores do JSON
+
+    existingProduto.Nome = updateProduto.Nome;
+    existingProduto.Preco = updateProduto.Preco;
+    existingProduto.Fornecedor = updateProduto.Fornecedor;
+
+
+    // Faz um await que salva as infos no BD
+    await dbContext.SaveChangesAsync();
+
+    // Retorna Pro Cliente que deu Boa
+
+    return Results.Ok(existingProduto);
+
+
+});
+
 app.Run();
 
 
