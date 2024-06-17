@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jbwV9uuJdd31jTtka3/Z60dnyO05FBE+wxC81n6MtOIHfN0krM1y8ifm7/GEVm7L27EMFUBcCBIxesmMuCApnQ==",
+  "dgSpecHash": "7p1MZdZ4qG0Au88KTtHjw/RPJfsd/dzm8KrZXlojYIkx1w+ACoMdWNcRGeD6GcLNtSNGyGRku91ZwnLSOUl78A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\loja\\Loja.csproj",
+  "projectFilePath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.3\\microsoft.aspnetcore.openapi.8.0.3.nupkg.sha512",
