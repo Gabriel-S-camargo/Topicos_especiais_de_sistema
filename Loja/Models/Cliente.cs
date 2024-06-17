@@ -2,18 +2,16 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Loja.Models
+
 {
-
-    public class Produto
+    public class Cliente
     {
-
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string Nome { get; set; }
-        public double Preco { get; set; }
-        public string Fornecedor { get; set; }
-
+        public string Cpf { get; set; }
+        public string Email { get; set; }
     }
 
 }

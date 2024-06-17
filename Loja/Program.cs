@@ -60,7 +60,8 @@ app.MapPut("/produtos/{id}", async (int id, LojaDbContext dbContext, Produto upd
 
     var existingProduto = await dbContext.Produtos.FindAsync(id);
 
-    if(existingProduto == null){
+    if (existingProduto == null)
+    {
         return Results.NotFound($"Produto com o ID {id} not found");
     }
 
@@ -81,6 +82,121 @@ app.MapPut("/produtos/{id}", async (int id, LojaDbContext dbContext, Produto upd
     return Results.Ok(existingProduto);
 
 
+});
+
+// Endpoint's Cliente
+
+// End point de criação do Cliente
+app.MapPost("/createCliente", async (LojaDbContext dbContext, Cliente newCliente) =>
+{
+    dbContext.Clientes.Add(newCliente);
+    await dbContext.SaveChangesAsync();
+    return Results.Created($"createCliente/{newCliente.Id}", newCliente);
+});
+
+// EndPoint de mostrar todos Clientes cadastrados
+
+app.MapGet("/Clientes", async (LojaDbContext dbContext) =>
+{
+
+    var Cliente = await dbContext.Clientes.ToListAsync();
+
+    return Results.Ok(Cliente);
+
+});
+
+// EndPoint para pesquisar Cliente por ID
+
+// Lembrar que para procurar voce so precisa do LojaDbContext dbContext para criação e update precisa Model newModel ou updateModel
+
+app.MapGet("Clientes/{id}", async (int id, LojaDbContext dbContext) =>
+{
+
+    var Cliente = await dbContext.Clientes.FindAsync(id);
+
+    if (Cliente == null)
+    {
+        return Results.NotFound($"Nenhum registro de cliente com o ID {id}");
+    }
+
+
+    return Results.Ok(Cliente);
+
+});
+
+// EndPoint para editar um Cliente
+
+app.MapPut("ClientesUpdate/{id}", async (int id, LojaDbContext dbContext, Cliente updateCliente) =>
+{
+
+    var existingCliente = await dbContext.Clientes.FindAsync(id);
+
+    if (existingCliente == null)
+    {
+        return Results.NotFound($"Nenhum registro de Cliente com o ID{id}");
+    }
+
+    existingCliente.Nome = updateCliente.Nome;
+    existingCliente.Cpf = updateCliente.Cpf;
+    existingCliente.Email = updateCliente.Email;
+
+    await dbContext.SaveChangesAsync();
+
+    return Results.Ok(existingCliente);
+
+});
+
+// EndPoint's para o fornecedor
+
+// EndPoint de criação de fornecedor
+
+app.MapPost("/createFornecedor", async (LojaDbContext dbContext, Cliente newFornecedor) =>
+{
+    dbContext.Add(newFornecedor);
+    await dbContext.SaveChangesAsync();
+
+    return Results.Created($"/createFornecedor/{newFornecedor.Id}", newFornecedor);
+});
+
+// EndPoint de Busca de todos os fornecedores
+
+app.MapGet("/Fornecedores", async (LojaDbContext dbContext) =>
+{
+    var Fornedores = await dbContext.Fornecedores.ToListAsync();
+
+    return Results.Ok(Fornedores);
+});
+
+// EndPoint de busca de Fornecedor por ID
+
+app.MapGet("/Fornecedores/{id}", async(int id, LojaDbContext dbContext) =>{
+    var Fornecedor = await dbContext.Fornecedores.FindAsync(id);
+
+    if(Fornecedor == null){
+        return Results.NotFound($"Nenhum fornecedor com o ID {id} encontrado");
+    }
+
+    return Results.Ok(Fornecedor);
+});
+
+// EndPoint de alteração de dados de fornecedor por ID
+
+app.MapPut("updateFornecedor/{id}", async(int id, LojaDbContext dbContext, Fornecedor updateFornecedor)=>{
+    var existingFornecedor = await dbContext.Fornecedores.FindAsync(id);
+
+    if(existingFornecedor == null){
+        return Results.NotFound($"Nenhum fornecedor com o ID {id} encontrado");
+    }
+
+    existingFornecedor.Nome = updateFornecedor.Nome;
+    existingFornecedor.Cnpj = updateFornecedor.Cnpj;
+    existingFornecedor.Endereco = updateFornecedor.Endereco;
+    existingFornecedor.Email = updateFornecedor.Email;
+    existingFornecedor.Telefone = updateFornecedor.Telefone;
+
+    await dbContext.SaveChangesAsync();
+
+    return Results.Ok(existingFornecedor);
 });
 
 app.Run();
