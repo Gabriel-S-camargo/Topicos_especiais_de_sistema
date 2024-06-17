@@ -1,6 +1,10 @@
-using Microsoft.EntityFrameworkCore;
-using Loja.Data;
+using Microsoft.AspNetCore.Mvc;
 using Loja.Models;
+using Loja.Services;
+using Loja.Data;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,80 +13,70 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Starta Conexão Com o BD 
+// Adiciona o serviço do ProductService
+builder.Services.AddScoped<ProductService>();
 
+// Starta Conexão Com o BD 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<LojaDbContext>(options => options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 37))));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configurar as requisições HTTP
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
 
+// Configure the HTTP request pipeline.
 app.UseHttpsRedirection();
 
-// Esse MapPost Cria um produto no Banco de Dados
 
-app.MapPost("/criarproduto", async (LojaDbContext dbContext, Produto newProduto) =>
+// Novo MapGet pega todos os produtos usando o serviço ProductService
+app.MapGet("/produtos", async (ProductService productService) =>
 {
-    dbContext.Produtos.Add(newProduto);
-    await dbContext.SaveChangesAsync();
-
-    return Results.Created($"/criarproduto/{newProduto.Id}", newProduto);
-});
-
-//Esse MapGet pega os registros na tabela Produtos
-
-app.MapGet("/produtos", async (LojaDbContext dbContext) =>
-{
-    var produtos = await dbContext.Produtos.ToListAsync();
+    var produtos = await productService.GetAllProductsAsync();
     return Results.Ok(produtos);
 });
 
-// Esse mapGet pega produtos pelo ID a partir da url e retorna mensagem de erro caso não se achado
-
-app.MapGet("/produto/{id}", async (int id, LojaDbContext dbContext) =>
+// Novo MapGet pega produtos pelo ID usando o serviço ProductService
+app.MapGet("/produtos/{id}", async (int id, ProductService productService) =>
 {
-    var produto = await dbContext.Produtos.FindAsync(id);
-
+    var produto = await productService.GetProductByIdAsync(id);
     if (produto == null)
     {
-        return Results.NotFound($"Produto com o ID {id} not found");
+        return Results.NotFound($"Product with ID {id} not found.");
     }
-
     return Results.Ok(produto);
 });
 
-// Esse mapPut atualiza um registro no Banco de Dados com novas informações
-
-app.MapPut("/produtos/{id}", async (int id, LojaDbContext dbContext, Produto updateProduto) =>
+// Novo MapPost cria um produto usando o serviço ProductService
+app.MapPost("/createProdutos", async (Produto produto, ProductService productService) =>
 {
-    //Verifica se o Produto passado na URL existe
-
-    var existingProduto = await dbContext.Produtos.FindAsync(id);
-
-    if (existingProduto == null)
-    {
-        return Results.NotFound($"Produto com o ID {id} not found");
-    }
-
-    // Depois de testado ele vai fazer as alterações no Banco de Dados
-    // Atualiza as infos a partir da requisição no Body do JSON
-    // aqui ele pega o Objeto que é do produto existente e atualiza a partir dos valores dos atributos do updateProduto que esta recebendo os valores do JSON
-
-    existingProduto.Nome = updateProduto.Nome;
-    existingProduto.Preco = updateProduto.Preco;
-    existingProduto.Fornecedor = updateProduto.Fornecedor;
-
-
-    // Faz um await que salva as infos no BD
-    await dbContext.SaveChangesAsync();
-
-    // Retorna Pro Cliente que deu Boa
-
-    return Results.Ok(existingProduto);
-
-
+    await productService.AddProductAsync(produto);
+    return Results.Created($"/produtos/{produto.Id}", produto);
 });
+
+// Novo MapPut atualiza um produto usando o serviço ProductService
+app.MapPut("/updateProdutos/{id}", async (int id, Produto produto, ProductService productService) =>
+{
+    if (id != produto.Id)
+    {
+        return Results.BadRequest("Product ID mismatch.");
+    }
+    await productService.UpdateProductAsync(produto);
+    return Results.Ok();
+});
+
+// Novo MapDelete deleta um produto usando o serviço ProductService
+app.MapDelete("/deleteProdutos/{id}", async (int id, ProductService productService) =>
+{
+    await productService.DeleteProductAsync(id);
+    return Results.Ok();
+});
+
+app.Run();
+
 
 // Endpoint's Cliente
 
