@@ -70,7 +70,8 @@ app.MapPut("/updateProdutos/{id}", async (int id, Produto produto, ProductServic
 
 // Novo MapDelete deleta um produto usando o serviço ProductService
 app.MapDelete("/deleteProdutos/{id}", async (int id, ProductService productService) =>
-{
+{   
+
     await productService.DeleteProductAsync(id);
     return Results.Ok();
 });
