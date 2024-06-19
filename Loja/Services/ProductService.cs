@@ -1,4 +1,3 @@
-
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
@@ -8,7 +7,10 @@ namespace Loja.Services
 {
     public class ProductService
     {
+        // Aqui voce atribui o DB 
         private readonly LojaDbContext _dbContext;
+
+        // Builder da Classe 
         public ProductService(LojaDbContext dbContext)
         {
             _dbContext = dbContext;

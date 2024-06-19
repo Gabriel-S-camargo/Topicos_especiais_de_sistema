@@ -43,3 +43,11 @@ C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_siste
 C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\primeiroprojeto.pdb
 C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\primeiroprojeto.genruntimeconfig.cache
 C:\Users\Luisa\Documents\Files_Gabriel-Santos_Camargo\Topicos_especiais_de_sistema\primeiroprojeto\obj\Debug\net7.0\ref\primeiroprojeto.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula01\obj\Debug\net7.0\primeiroprojeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula01\obj\Debug\net7.0\primeiroprojeto.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula01\obj\Debug\net7.0\primeiroprojeto.AssemblyInfo.cs
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula01\obj\Debug\net7.0\primeiroprojeto.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula01\obj\Debug\net7.0\primeiroprojeto.sourcelink.json
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula01\obj\Debug\net7.0\primeiroprojeto.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula01\obj\Debug\net7.0\refint\primeiroprojeto.dll
+C:\Users\gabri\Documents\Programacao\Topicos_especiais_de_sistema\aula01\obj\Debug\net7.0\primeiroprojeto.pdb

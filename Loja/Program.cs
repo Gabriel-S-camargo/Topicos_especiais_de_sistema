@@ -15,6 +15,8 @@ builder.Services.AddSwaggerGen();
 
 // Adiciona o serviço do ProductService
 builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<ClienteService>();
+builder.Services.AddScoped<FornecedorService>();
 
 // Starta Conexão Com o BD 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -70,31 +72,27 @@ app.MapPut("/updateProdutos/{id}", async (int id, Produto produto, ProductServic
 
 // Novo MapDelete deleta um produto usando o serviço ProductService
 app.MapDelete("/deleteProdutos/{id}", async (int id, ProductService productService) =>
-{   
+{
 
     await productService.DeleteProductAsync(id);
-    return Results.Ok();
+    return Results.Ok("Produto Deletado");
 });
-
-app.Run();
-
 
 // Endpoint's Cliente
 
 // End point de criação do Cliente
-app.MapPost("/createCliente", async (LojaDbContext dbContext, Cliente newCliente) =>
+app.MapPost("/createCliente", async (Cliente newCliente, ClienteService clienteService) =>
 {
-    dbContext.Clientes.Add(newCliente);
-    await dbContext.SaveChangesAsync();
+    await clienteService.AddClienteAsync(newCliente);
     return Results.Created($"createCliente/{newCliente.Id}", newCliente);
 });
 
 // EndPoint de mostrar todos Clientes cadastrados
 
-app.MapGet("/Clientes", async (LojaDbContext dbContext) =>
+app.MapGet("/Clientes", async (ClienteService clienteService) =>
 {
 
-    var Cliente = await dbContext.Clientes.ToListAsync();
+    var Cliente = await clienteService.GetAllClienteAsync();
 
     return Results.Ok(Cliente);
 
@@ -104,10 +102,10 @@ app.MapGet("/Clientes", async (LojaDbContext dbContext) =>
 
 // Lembrar que para procurar voce so precisa do LojaDbContext dbContext para criação e update precisa Model newModel ou updateModel
 
-app.MapGet("Clientes/{id}", async (int id, LojaDbContext dbContext) =>
+app.MapGet("Clientes/{id}", async (int id, ClienteService clienteService) =>
 {
 
-    var Cliente = await dbContext.Clientes.FindAsync(id);
+    var Cliente = await clienteService.GetClienteAsync(id);
 
     if (Cliente == null)
     {
@@ -121,77 +119,88 @@ app.MapGet("Clientes/{id}", async (int id, LojaDbContext dbContext) =>
 
 // EndPoint para editar um Cliente
 
-app.MapPut("ClientesUpdate/{id}", async (int id, LojaDbContext dbContext, Cliente updateCliente) =>
+app.MapPut("clienteUpdate/{id}", async (int id, ClienteService clienteService, Cliente updateCliente) =>
 {
-
-    var existingCliente = await dbContext.Clientes.FindAsync(id);
-
-    if (existingCliente == null)
+    if (id != updateCliente.Id)
     {
-        return Results.NotFound($"Nenhum registro de Cliente com o ID{id}");
+        return Results.BadRequest("O ID nao corresponde a um ID ja cadastrado");
     }
 
-    existingCliente.Nome = updateCliente.Nome;
-    existingCliente.Cpf = updateCliente.Cpf;
-    existingCliente.Email = updateCliente.Email;
+    await clienteService.UpdateClienteAsync(updateCliente);
+    return Results.Ok();
 
-    await dbContext.SaveChangesAsync();
+});
 
-    return Results.Ok(existingCliente);
+// EndPoint para deletar um cliente
 
+app.MapDelete("clienteDelete/{id}", async (int id, ClienteService clienteService) =>
+{
+    await clienteService.DeleteClienteAsync(id);
+    return Results.Ok("Cliente deletado");
 });
 
 // EndPoint's para o fornecedor
 
 // EndPoint de criação de fornecedor
 
-app.MapPost("/createFornecedor", async (LojaDbContext dbContext, Cliente newFornecedor) =>
+app.MapPost("/createFornecedor", async (FornecedorService fornecedorService, Fornecedor newFornecedor) =>
 {
-    dbContext.Add(newFornecedor);
-    await dbContext.SaveChangesAsync();
+    await fornecedorService.AddFornecedorAsync(newFornecedor);
 
     return Results.Created($"/createFornecedor/{newFornecedor.Id}", newFornecedor);
 });
 
 // EndPoint de Busca de todos os fornecedores
 
-app.MapGet("/Fornecedores", async (LojaDbContext dbContext) =>
+app.MapGet("/Fornecedores", async (FornecedorService fornecedorService) =>
 {
-    var Fornedores = await dbContext.Fornecedores.ToListAsync();
 
-    return Results.Ok(Fornedores);
+    var fornecedor = await fornecedorService.GetAllFornecedorAsync();
+    return Results.Ok(fornecedor);
+
 });
 
 // EndPoint de busca de Fornecedor por ID
 
-app.MapGet("/Fornecedores/{id}", async(int id, LojaDbContext dbContext) =>{
-    var Fornecedor = await dbContext.Fornecedores.FindAsync(id);
+app.MapGet("/Fornecedores/{id}", async (int id, FornecedorService fornecedorService) =>
+{
+    var fornecedor = await fornecedorService.GetFornecedorAsync(id);
 
-    if(Fornecedor == null){
-        return Results.NotFound($"Nenhum fornecedor com o ID {id} encontrado");
+    if (fornecedor == null)
+    {
+        return Results.NotFound($"Nenhum registro de cliente com o ID {id}");
     }
 
-    return Results.Ok(Fornecedor);
+    return Results.Ok(fornecedor);
+
 });
 
 // EndPoint de alteração de dados de fornecedor por ID
 
-app.MapPut("updateFornecedor/{id}", async(int id, LojaDbContext dbContext, Fornecedor updateFornecedor)=>{
-    var existingFornecedor = await dbContext.Fornecedores.FindAsync(id);
+app.MapPut("updateFornecedor/{id}", async (int id, FornecedorService fornecedorService, Fornecedor fornecedor) =>
+{
 
-    if(existingFornecedor == null){
-        return Results.NotFound($"Nenhum fornecedor com o ID {id} encontrado");
+
+    if (id != fornecedor.Id)
+    {
+        return Results.BadRequest("ID fornecedor não localizado nos registro");
     }
 
-    existingFornecedor.Nome = updateFornecedor.Nome;
-    existingFornecedor.Cnpj = updateFornecedor.Cnpj;
-    existingFornecedor.Endereco = updateFornecedor.Endereco;
-    existingFornecedor.Email = updateFornecedor.Email;
-    existingFornecedor.Telefone = updateFornecedor.Telefone;
+    await fornecedorService.UpdateFornecedorAsync(fornecedor);
 
-    await dbContext.SaveChangesAsync();
+    return Results.Ok(fornecedor);
+});
 
-    return Results.Ok(existingFornecedor);
+
+// EndPoint para deletar fornecedor
+
+app.MapDelete("deleteFornecedor/{id}", async (int id, FornecedorService fornecedorService) =>
+{
+
+    await fornecedorService.DeleteFornecedorAsync(id);
+
+    return Results.Ok("Fornecedor Deletado com sucesso");
+
 });
 
 app.Run();

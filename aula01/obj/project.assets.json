@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Luisa\\.nuget\\packages\\": {}
+    "C:\\Users\\gabri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\Topicos_especiais_de_sistema\\aula01\\primeiroprojeto.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\aula01\\primeiroprojeto.csproj",
       "projectName": "primeiroprojeto",
-      "projectPath": "C:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\Topicos_especiais_de_sistema\\aula01\\primeiroprojeto.csproj",
-      "packagesPath": "C:\\Users\\Luisa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luisa\\Documents\\Files_Gabriel-Santos_Camargo\\Topicos_especiais_de_sistema\\aula01\\obj\\",
+      "projectPath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\aula01\\primeiroprojeto.csproj",
+      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\aula01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Luisa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -62,19 +62,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.16, 7.0.16]"
+            "version": "[7.0.17, 7.0.17]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.16, 7.0.16]"
+            "version": "[7.0.17, 7.0.17]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.16, 7.0.16]"
+            "version": "[7.0.17, 7.0.17]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.16, 7.0.16]"
+            "version": "[7.0.17, 7.0.17]"
           }
         ],
         "frameworkReferences": {
@@ -82,7 +82,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
