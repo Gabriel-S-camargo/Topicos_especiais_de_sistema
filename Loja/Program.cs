@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -117,7 +118,7 @@ app.MapGet("/rotaSegura", async (HttpContext context) =>
 });
 
 // Métodos do usuário 
-app.MapGet("/rotaSegura/usuarios", async (UsuarioService usuarioService) =>
+app.MapGet("/rotaSegura/usuarios", [Authorize] async (UsuarioService usuarioService) =>
 {
     var usuarios = await usuarioService.GetAllUsuariosAsync();
     if (usuarios != null)
@@ -129,7 +130,7 @@ app.MapGet("/rotaSegura/usuarios", async (UsuarioService usuarioService) =>
     return Results.BadRequest("Nenhum Usuário Cadastrado");
 });
 
-app.MapGet("/rotaSegura/usuario/{id}", async (UsuarioService usuarioService, int id) =>
+app.MapGet("/rotaSegura/usuario/{id}", [Authorize] async (UsuarioService usuarioService, int id) =>
 {
     var usuario = await usuarioService.GetUsuarioByIdAsync(id);
 
@@ -141,13 +142,13 @@ app.MapGet("/rotaSegura/usuario/{id}", async (UsuarioService usuarioService, int
     return Results.BadRequest($"Nenhum usuário com o ID {id} Localizado");
 });
 
-app.MapPost("/addUsuario", async (UsuarioService usuarioService, Usuario usuario) =>
+app.MapPost("rotaSegura/addUsuario",  [Authorize] async (UsuarioService usuarioService, Usuario usuario) =>
 {
     await usuarioService.AddUsuarioAsync(usuario);
     return Results.Created($"rotaSegura/Usuario/{usuario.Id}", usuario);
 });
 
-app.MapPut("/rotaSegura/updateUsuario/{id}", async (UsuarioService usuarioService, int id, Usuario usuario) =>
+app.MapPut("/rotaSegura/updateUsuario/{id}", [Authorize] async (UsuarioService usuarioService, int id, Usuario usuario) =>
 {
     var userFound = await usuarioService.GetUsuarioByIdAsync(id);
 
@@ -159,7 +160,7 @@ app.MapPut("/rotaSegura/updateUsuario/{id}", async (UsuarioService usuarioServic
     return Results.BadRequest("Usuario não localizado no sistema");
 });
 
-app.MapDelete("/rotaSegura/deleteUsuario/{id}", async (UsuarioService usuarioService, int id) =>
+app.MapDelete("/rotaSegura/deleteUsuario/{id}", [Authorize] async (UsuarioService usuarioService, int id) =>
 {
     await usuarioService.DeleteUsuarioAsync(id);
     return Results.Ok($"Usuario com o ID {id} deletado");
@@ -168,14 +169,14 @@ app.MapDelete("/rotaSegura/deleteUsuario/{id}", async (UsuarioService usuarioSer
 
 
 // Novo MapGet pega todos os produtos usando o serviço ProductService
-app.MapGet("/rotaSegura/produtos", async (ProductService productService) =>
+app.MapGet("/rotaSegura/produtos",[Authorize] async (ProductService productService) =>
 {
     var produtos = await productService.GetAllProductsAsync();
     return Results.Ok(produtos);
 });
 
 // Novo MapGet pega produtos pelo ID usando o serviço ProductService
-app.MapGet("/rotaSegura/produtos/{id}", async (int id, ProductService productService) =>
+app.MapGet("/rotaSegura/produtos/{id}", [Authorize] async (int id, ProductService productService) =>
 {
     var produto = await productService.GetProductByIdAsync(id);
     if (produto == null)
@@ -186,14 +187,14 @@ app.MapGet("/rotaSegura/produtos/{id}", async (int id, ProductService productSer
 });
 
 // Novo MapPost cria um produto usando o serviço ProductService
-app.MapPost("/rotaSegura/createProdutos", async (Produto produto, ProductService productService) =>
+app.MapPost("/rotaSegura/createProdutos", [Authorize] async (Produto produto, ProductService productService) =>
 {
     await productService.AddProductAsync(produto);
     return Results.Created($"/produtos/{produto.Id}", produto);
 });
 
 // Novo MapPut atualiza um produto usando o serviço ProductService
-app.MapPut("/rotaSegura/updateProdutos/{id}", async (int id, Produto produto, ProductService productService) =>
+app.MapPut("/rotaSegura/updateProdutos/{id}", [Authorize] async (int id, Produto produto, ProductService productService) =>
 {
     if (id != produto.Id)
     {
@@ -204,7 +205,7 @@ app.MapPut("/rotaSegura/updateProdutos/{id}", async (int id, Produto produto, Pr
 });
 
 // Novo MapDelete deleta um produto usando o serviço ProductService
-app.MapDelete("/rotaSegura/deleteProdutos/{id}", async (int id, ProductService productService) =>
+app.MapDelete("/rotaSegura/deleteProdutos/{id}", [Authorize] async (int id, ProductService productService) =>
 {
     await productService.DeleteProductAsync(id);
     return Results.Ok("Produto Deletado");
@@ -213,7 +214,7 @@ app.MapDelete("/rotaSegura/deleteProdutos/{id}", async (int id, ProductService p
 // Endpoint's Cliente
 
 // End point de criação do Cliente
-app.MapPost("/rotaSegura/createCliente", async (Cliente newCliente, ClienteService clienteService) =>
+app.MapPost("/rotaSegura/createCliente", [Authorize] async (Cliente newCliente, ClienteService clienteService) =>
 {
     await clienteService.AddClienteAsync(newCliente);
     return Results.Created($"createCliente/{newCliente.Id}", newCliente);
@@ -221,7 +222,7 @@ app.MapPost("/rotaSegura/createCliente", async (Cliente newCliente, ClienteServi
 
 // EndPoint de mostrar todos Clientes cadastrados
 
-app.MapGet("/rotaSegura/Clientes", async (ClienteService clienteService) =>
+app.MapGet("/rotaSegura/Clientes", [Authorize] async (ClienteService clienteService) =>
 {
 
     var Cliente = await clienteService.GetAllClienteAsync();
@@ -234,7 +235,7 @@ app.MapGet("/rotaSegura/Clientes", async (ClienteService clienteService) =>
 
 // Lembrar que para procurar voce so precisa do LojaDbContext dbContext para criação e update precisa Model newModel ou updateModel
 
-app.MapGet("/rotaSegura/Clientes/{id}", async (int id, ClienteService clienteService) =>
+app.MapGet("/rotaSegura/Clientes/{id}", [Authorize] async (int id, ClienteService clienteService) =>
 {
 
     var Cliente = await clienteService.GetClienteAsync(id);
@@ -251,7 +252,7 @@ app.MapGet("/rotaSegura/Clientes/{id}", async (int id, ClienteService clienteSer
 
 // EndPoint para editar um Cliente
 
-app.MapPut("/rotaSegura/clienteUpdate/{id}", async (int id, ClienteService clienteService, Cliente updateCliente) =>
+app.MapPut("/rotaSegura/clienteUpdate/{id}", [Authorize] async (int id, ClienteService clienteService, Cliente updateCliente) =>
 {
     if (id != updateCliente.Id)
     {
@@ -263,7 +264,7 @@ app.MapPut("/rotaSegura/clienteUpdate/{id}", async (int id, ClienteService clien
 
 // EndPoint para deletar um cliente
 
-app.MapDelete("/rotaSegura/clienteDelete/{id}", async (int id, ClienteService clienteService) =>
+app.MapDelete("/rotaSegura/clienteDelete/{id}", [Authorize] async (int id, ClienteService clienteService) =>
 {
     await clienteService.DeleteClienteAsync(id);
     return Results.Ok("Cliente deletado");
@@ -273,7 +274,7 @@ app.MapDelete("/rotaSegura/clienteDelete/{id}", async (int id, ClienteService cl
 
 // EndPoint de criação de fornecedor
 
-app.MapPost("/rotaSegura/createFornecedor", async (FornecedorService fornecedorService, Fornecedor newFornecedor) =>
+app.MapPost("/rotaSegura/createFornecedor", [Authorize] async (FornecedorService fornecedorService, Fornecedor newFornecedor) =>
 {
     await fornecedorService.AddFornecedorAsync(newFornecedor);
     return Results.Created($"/createFornecedor/{newFornecedor.Id}", newFornecedor);
@@ -281,7 +282,7 @@ app.MapPost("/rotaSegura/createFornecedor", async (FornecedorService fornecedorS
 
 // EndPoint de Busca de todos os fornecedores
 
-app.MapGet("/rotaSegura/Fornecedores", async (FornecedorService fornecedorService) =>
+app.MapGet("/rotaSegura/Fornecedores", [Authorize] async (FornecedorService fornecedorService) =>
 {
     var fornecedores = await fornecedorService.GetAllFornecedorAsync();
     return Results.Ok(fornecedores);
@@ -289,7 +290,7 @@ app.MapGet("/rotaSegura/Fornecedores", async (FornecedorService fornecedorServic
 
 // EndPoint de busca de Fornecedor por ID
 
-app.MapGet("/rotaSegura/Fornecedores/{id}", async (int id, FornecedorService fornecedorService) =>
+app.MapGet("/rotaSegura/Fornecedores/{id}", [Authorize] async (int id, FornecedorService fornecedorService) =>
 {
     var fornecedor = await fornecedorService.GetFornecedorAsync(id);
 
@@ -304,7 +305,7 @@ app.MapGet("/rotaSegura/Fornecedores/{id}", async (int id, FornecedorService for
 
 // EndPoint de alteração de dados de fornecedor por ID
 
-app.MapPut("/rotaSegura/updateFornecedor/{id}", async (int id, FornecedorService fornecedorService, Fornecedor fornecedor) =>
+app.MapPut("/rotaSegura/updateFornecedor/{id}", [Authorize] async (int id, FornecedorService fornecedorService, Fornecedor fornecedor) =>
 {
     if (id != fornecedor.Id)
     {
@@ -317,7 +318,7 @@ app.MapPut("/rotaSegura/updateFornecedor/{id}", async (int id, FornecedorService
 
 // EndPoint para deletar fornecedor
 
-app.MapDelete("/rotaSegura/deleteFornecedor/{id}", async (int id, FornecedorService fornecedorService) =>
+app.MapDelete("/rotaSegura/deleteFornecedor/{id}", [Authorize] async (int id, FornecedorService fornecedorService) =>
 {
     await fornecedorService.DeleteFornecedorAsync(id);
     return Results.Ok("Fornecedor Deletado com sucesso");
