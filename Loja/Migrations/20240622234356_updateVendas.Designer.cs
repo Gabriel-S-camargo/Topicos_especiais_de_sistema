@@ -4,6 +4,7 @@ using Loja.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Loja.Migrations
 {
     [DbContext(typeof(LojaDbContext))]
-    partial class LojaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240622234356_updateVendas")]
+    partial class updateVendas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -162,6 +165,9 @@ namespace Loja.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("DataVenda")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<int>("IdCliente")
                         .HasColumnType("int");
 
@@ -171,14 +177,11 @@ namespace Loja.Migrations
                     b.Property<int>("NumNotaFiscal")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("dataVenda")
-                        .HasColumnType("datetime(6)");
+                    b.Property<double>("ValorVenda")
+                        .HasColumnType("double");
 
                     b.Property<int>("quantidadeVendida")
                         .HasColumnType("int");
-
-                    b.Property<double>("valorVenda")
-                        .HasColumnType("double");
 
                     b.HasKey("Id");
 

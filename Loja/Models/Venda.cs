@@ -9,12 +9,13 @@ namespace Loja.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public DateTime DataVenda { get; set; }
+        public DateTime dataVenda { get; set; }
         public int NumNotaFiscal { get; set; }
         public int IdCliente { get; set; }
         public Cliente Cliente { get; set; }
         public int IdProduto { get; set; }
         public Produto Produto { get; set; } // Singular
-        public double ValorVenda { get; set; }
+        public int quantidadeVendida { get; set; }
+        public double valorVenda { get; set; }
     }
 }

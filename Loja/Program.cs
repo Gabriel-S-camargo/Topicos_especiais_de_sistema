@@ -26,6 +26,8 @@ builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<ClienteService>();
 builder.Services.AddScoped<FornecedorService>();
 builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<VendaService>();
+builder.Services.AddScoped<DepositoService>();
 
 // Starta Conexão Com o BD 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -142,7 +144,7 @@ app.MapGet("/rotaSegura/usuario/{id}", [Authorize] async (UsuarioService usuario
     return Results.BadRequest($"Nenhum usuário com o ID {id} Localizado");
 });
 
-app.MapPost("rotaSegura/addUsuario",  [Authorize] async (UsuarioService usuarioService, Usuario usuario) =>
+app.MapPost("rotaSegura/addUsuario", [Authorize] async (UsuarioService usuarioService, Usuario usuario) =>
 {
     await usuarioService.AddUsuarioAsync(usuario);
     return Results.Created($"rotaSegura/Usuario/{usuario.Id}", usuario);
@@ -169,7 +171,7 @@ app.MapDelete("/rotaSegura/deleteUsuario/{id}", [Authorize] async (UsuarioServic
 
 
 // Novo MapGet pega todos os produtos usando o serviço ProductService
-app.MapGet("/rotaSegura/produtos",[Authorize] async (ProductService productService) =>
+app.MapGet("/rotaSegura/produtos", [Authorize] async (ProductService productService) =>
 {
     var produtos = await productService.GetAllProductsAsync();
     return Results.Ok(produtos);
@@ -322,6 +324,129 @@ app.MapDelete("/rotaSegura/deleteFornecedor/{id}", [Authorize] async (int id, Fo
 {
     await fornecedorService.DeleteFornecedorAsync(id);
     return Results.Ok("Fornecedor Deletado com sucesso");
+});
+
+// EndPoint's da Venda 
+
+// EndPoint para adicionar uma venda 
+
+app.MapPost("/rotaSegura/createVenda", [Authorize] async (VendaService vendaService, ProductService produtoService, ClienteService clienteService, Venda venda) =>
+{
+    var produtoVenda = await produtoService.GetProductByIdAsync(venda.IdProduto);
+
+    var clienteVenda = await clienteService.GetClienteAsync(venda.IdCliente);
+
+    if (produtoVenda != null && clienteVenda != null)
+    {
+        if (venda.quantidadeVendida <= produtoVenda.QuantidadeEstoque)
+        {
+            await vendaService.AddVendaAsync(venda);
+            produtoVenda.QuantidadeEstoque -= venda.quantidadeVendida;
+            return Results.Ok(venda);
+
+        }
+        return Results.BadRequest("Quantidade Vendida maior que disponivel em estoque");
+    }
+
+    return Results.BadRequest("Cliente ID ou Produto ID inválidos");
+});
+
+// EndPoint para buscar todas as vendas
+
+app.MapGet("/rotaSegura/vendas", [Authorize] async (VendaService vendaService) =>
+{
+    var vendas = await vendaService.GetAllVendasAsync();
+
+    if (vendas != null)
+    {
+        return Results.Ok(vendas);
+    }
+
+    return Results.BadRequest("Nenhum usuario Cadastrado");
+
+});
+
+// EndPoint para pegar venda por Id
+
+app.MapGet("/rotaSegura/venda/{id}", [Authorize] async (VendaService vendaService, int id) =>
+{
+    var venda = await vendaService.GetVendaByIdAsync(id);
+
+    if (venda != null)
+    {
+        return Results.Ok(venda);
+    }
+
+    return Results.BadRequest($"Nenhuma Venda encontrada com o ID {id}");
+});
+
+app.MapPut("/rotaSegura/vendaUpdate/{id}", [Authorize] async (VendaService vendaService, int id) =>
+{
+
+    var Venda = await vendaService.GetVendaByIdAsync(id);
+
+    if (Venda != null)
+    {
+        await vendaService.UpdateVendaAsync(Venda);
+        return Results.Ok(Venda);
+    }
+
+    return Results.BadRequest("ID fornecido inválido");
+});
+
+app.MapDelete("/rotaSegura/vendaDelete/{id}", [Authorize] async (VendaService vendaService, int id) =>
+{
+    await vendaService.DeleteVendaAsync(id);
+    return Results.Ok($"Venda com o ID{id} deletada");
+});
+
+// EndPoint's Deposito
+
+app.MapPost("/rotaSegura/depositoCreate", [Authorize] async(DepositoService depositoService,ProductService produtoService, Deposito deposito )=>{
+    var produtoDeposito = await produtoService.GetProductByIdAsync(deposito.IdProduto);
+
+    if(produtoDeposito != null){
+        await depositoService.AddDepositoAsync(deposito);
+        produtoDeposito.QuantidadeEstoque += deposito.quantidade;
+        return Results.Ok(deposito);
+    }
+    return Results.BadRequest("Id de produto inválido");
+});
+
+app.MapGet("/rotaSegura/depositos", [Authorize] async(DepositoService depositoService)=>{
+    var depositos = await depositoService.GetAllDepositoAsync();
+
+    if(depositos != null){
+        return Results.Ok(depositos);
+    } 
+
+    return Results.BadRequest("Nenhum produto cadastrado");
+});
+
+app.MapGet("/rotaSegura/deposito/{id}", [Authorize] async(DepositoService depositoService, int id)=>{
+    var deposito = await depositoService.GetDepositoById(id);
+
+    if(deposito != null){
+        return Results.Ok(deposito);
+    }
+
+    return Results.BadRequest("Id fornecido inválido");
+});
+
+app.MapPut("/rotaSegura/depositoUpdate/{id}", [Authorize] async(DepositoService depositoService, int id, Deposito deposito)=>{
+    var depositoFound = await depositoService.GetDepositoById(id);
+
+    if(depositoFound.Id == deposito.Id){
+        await depositoService.UpdateDeposito(deposito);
+        return Results.Ok(deposito);
+    }
+
+    return Results.BadRequest("ID produto inválido");
+});
+
+app.MapDelete("/rotaSegura/depositoDelete/{id}", [Authorize] async(DepositoService depositoService, int id)=>{
+    await depositoService.DeleteDeposito(id);
+    return Results.Ok("Produto deletado com sucesso");
 });
 
 app.Run();
