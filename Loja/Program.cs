@@ -28,11 +28,13 @@ builder.Services.AddScoped<FornecedorService>();
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<VendaService>();
 builder.Services.AddScoped<DepositoService>();
-
+// aqui é para evitar o erro de LOOP ao receber um arquivo JSON com Foreign Key
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
 });
+
+// Esse cara aqui Faz a mesma coisa
 
 builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options => options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 // Starta Conexão Com o BD 
