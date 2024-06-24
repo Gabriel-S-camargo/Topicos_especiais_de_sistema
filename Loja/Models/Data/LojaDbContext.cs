@@ -18,15 +18,18 @@ namespace Loja.Data
         public DbSet<Deposito> Depositos { get; set; }
 
         // Aqui no OnModelCreating que voce vai definir algumas a relação entre as chaves  e como será a exclusão
+        // padrão -> base,OnModelCreating 
+        //           modelBuilder.Entity<Nome da Classe>()
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
             // Configurar a relação entre Produto e Fornecedor
             modelBuilder.Entity<Produto>()
+                // relação de 1 para varios - 1 produto tem 1 fornecedor, mas um fornecedor pode ter vários produtos
                 .HasOne(produto => produto.Fornecedor)
                 .WithMany(fornecedor => fornecedor.Produtos)
-                .HasForeignKey(produto => produto.FornecedorId)
+                .HasForeignKey(produto => produto.FornecedorId) // Define qual a tabela que vai ter a FK
                 .OnDelete(DeleteBehavior.Cascade);// Define o comportamento de exclusão
 
             modelBuilder.Entity<Venda>()

@@ -66,6 +66,7 @@ namespace Loja.Services
     }
 
     // Consultar vendas por produto (sumarizada)
+    // Aqui é onde definimos Buscas específicas para a classe
     public async Task<dynamic> ConsultarVendasPorProdutoSumarizada(int idProduto)
     {
         return await _dbContext.Vendas

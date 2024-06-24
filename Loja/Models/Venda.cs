@@ -13,8 +13,8 @@ namespace Loja.Models
         public int NumNotaFiscal { get; set; }
         public int IdCliente { get; set; }
         public Cliente Cliente { get; set; }
-        public int IdProduto { get; set; }
-        public Produto Produto { get; set; } // Singular
+        public int IdProduto { get; set; } // Propiedade que vai Receber a FK
+        public Produto Produto { get; set; } // Propiedade de navegação do Entity
         public int quantidadeVendida { get; set; }
         public double valorVenda { get; set; }
     }
