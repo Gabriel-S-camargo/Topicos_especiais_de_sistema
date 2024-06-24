@@ -28,6 +28,8 @@ builder.Services.AddScoped<FornecedorService>();
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<VendaService>();
 builder.Services.AddScoped<DepositoService>();
+builder.Services.AddScoped<ServicoService>();
+builder.Services.AddScoped<ContratoService>();
 // aqui é para evitar o erro de LOOP ao receber um arquivo JSON com Foreign Key
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
@@ -466,7 +468,7 @@ app.MapDelete("/rotaSegura/depositoDelete/{id}", [Authorize] async (DepositoServ
 });
 
 // Consultar vendas detalhadas por produto
-app.MapGet("/rotaSegura/vendaDetalhada/{idProduto}", async (int idProduto, VendaService vendaService) =>
+app.MapGet("/rotaSegura/vendaDetalhada/{idProduto}",  [Authorize] async (int idProduto, VendaService vendaService) =>
 {
     var result = await vendaService.ConsultarVendasPorProdutoDetalhada(idProduto);
     if (result.Any())
@@ -480,7 +482,7 @@ app.MapGet("/rotaSegura/vendaDetalhada/{idProduto}", async (int idProduto, Venda
 });
 
 // Consultar vendas sumarizadas por produto
-app.MapGet("/rotaSegura/vendaSumarizada/{idProduto}", async (int idProduto, VendaService vendaService) =>
+app.MapGet("/rotaSegura/vendaSumarizada/{idProduto}",  [Authorize] async (int idProduto, VendaService vendaService) =>
 {
     var result = await vendaService.ConsultarVendasPorProdutoSumarizada(idProduto);
     if (result != null)
@@ -494,7 +496,7 @@ app.MapGet("/rotaSegura/vendaSumarizada/{idProduto}", async (int idProduto, Vend
 });
 
 // Consultar vendas detalhadas por cliente
-app.MapGet("/rotaSegura/vendaDetalhadaCliente/{idCliente}", async (int idCliente, VendaService vendaService) =>
+app.MapGet("/rotaSegura/vendaDetalhadaCliente/{idCliente}",  [Authorize] async (int idCliente, VendaService vendaService) =>
 {
     var result = await vendaService.ConsultarVendasPorClienteDetalhada(idCliente);
     if (result.Any())
@@ -508,7 +510,7 @@ app.MapGet("/rotaSegura/vendaDetalhadaCliente/{idCliente}", async (int idCliente
 });
 
 // Consultar vendas sumarizadas por cliente
-app.MapGet("/rotaSegura/vendaSumarizadaCliente/{idCliente}", async (int idCliente, VendaService vendaService) =>
+app.MapGet("/rotaSegura/vendaSumarizadaCliente/{idCliente}",  [Authorize] async (int idCliente, VendaService vendaService) =>
 {
     var result = await vendaService.ConsultarVendasPorClienteSumarizada(idCliente);
     if (result != null)
@@ -522,7 +524,7 @@ app.MapGet("/rotaSegura/vendaSumarizadaCliente/{idCliente}", async (int idClient
 });
 
 // Consultar produtos no depósito de forma sumarizada
-app.MapGet("/rotaSegura/produtosDeposito/{idDeposito}", async (int idDeposito, VendaService vendaService) =>
+app.MapGet("/rotaSegura/produtosDeposito/{idDeposito}",  [Authorize] async (int idDeposito, VendaService vendaService) =>
 {
     var result = await vendaService.ConsultarProdutosNoDepositoSumarizada(idDeposito);
     if (result.Any())
@@ -536,7 +538,7 @@ app.MapGet("/rotaSegura/produtosDeposito/{idDeposito}", async (int idDeposito, V
 });
 
 // Consultar a quantidade de um produto no depósito
-app.MapGet("/rotaSegura/produtoDeposito/{idProduto}", async (int idProduto, VendaService vendaService) =>
+app.MapGet("/rotaSegura/produtoDeposito/{idProduto}",  [Authorize] async (int idProduto, VendaService vendaService) =>
 {
     var result = await vendaService.ConsultarQuantidadeProdutoDeposito(idProduto);
     if (result != null)
@@ -547,6 +549,56 @@ app.MapGet("/rotaSegura/produtoDeposito/{idProduto}", async (int idProduto, Vend
     {
         return Results.NotFound("Produto não encontrado no depósito.");
     }
+});
+
+// EndPoint's dos Servicos
+
+app.MapPost("/rotaSegura/createServico", [Authorize] async(ServicoService servicoService, Servico newServico)=>{
+    await servicoService.AddServicoAsync(newServico);
+
+    Results.Created($"/createServico/{newServico.Id}", newServico);
+});
+
+app.MapGet("/rotaSegura/Servico/{id}", [Authorize] async(ServicoService servicoService, int id)=>{
+    var servico = await servicoService.GetServicoByIdAsync(id);
+
+    if (servico != null){
+        return Results.Ok(servico);
+    }
+
+    return Results.BadRequest($"Servico com o ID {id} inválido");
+});
+
+app.MapPut("/rotaSegura/updateServico/{id}", [Authorize] async (ServicoService servicoService, int id, Servico servico)=>{
+    if(id != servico.Id){
+        return Results.BadRequest("ID fornecido não corresponde ao ID nos registros");
+    }
+        await servicoService.UpdateServicoAsync(servico);
+
+        return Results.Ok(servico);
+});
+
+app.MapPost("/rotaSegura/createContrato", [Authorize] async(ContratoService contratoService, Contrato newContrato)=>{
+    await contratoService.AddContratoAsync(newContrato);
+
+    return Results.Created($"/createContrato/{newContrato.Id}", newContrato);
+
+});
+
+// Endpoint para pegar os contratos de um cliente
+
+app.MapGet("/rotaSegura/clientes/{id}/servicos", [Authorize] async(int id, ContratoService contratoService, ClienteService clienteService )=>{
+    var cliente =  await clienteService.GetClienteAsync(id);
+
+    if(cliente != null){
+        var clientes = await contratoService.GetAllContratosClienteAsync(id);
+
+        return Results.Ok(clientes);
+    }
+
+    return Results.BadRequest("ID Cliente informado inválido");
+
+    
 });
 
 

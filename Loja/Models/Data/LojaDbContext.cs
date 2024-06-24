@@ -16,6 +16,8 @@ namespace Loja.Data
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<Deposito> Depositos { get; set; }
+        public DbSet<Servico> Servicos { get; set; }
+        public DbSet<Contrato> Contratos  { get; set; }
 
         // Aqui no OnModelCreating que voce vai definir algumas a relação entre as chaves  e como será a exclusão
         // padrão -> base,OnModelCreating 
@@ -48,6 +50,18 @@ namespace Loja.Data
             .HasOne(deposito => deposito.Produto)
             .WithMany(produto => produto.Depositos)
             .HasForeignKey(deposito => deposito.IdProduto)
+            .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Contrato>()
+            .HasOne(contrato => contrato.cliente)
+            .WithMany(cliente => cliente.Contratos)
+            .HasForeignKey(contrato => contrato.IdCliente)
+            .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Contrato>()
+            .HasOne(contrato => contrato.servico)
+            .WithMany(servico => servico.Contratos)
+            .HasForeignKey(Contrato => Contrato.IdServico)
             .OnDelete(DeleteBehavior.Cascade);
         }
     }
