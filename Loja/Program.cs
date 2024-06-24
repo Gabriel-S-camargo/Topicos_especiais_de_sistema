@@ -34,9 +34,10 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
 });
 
-// Esse cara aqui Faz a mesma coisa
+// Esse cara aqui Faz a mesma coisa, evita o LOOP no arquivo
 
 builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options => options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
 // Starta Conexão Com o BD 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<LojaDbContext>(options => options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 37))));
@@ -62,6 +63,7 @@ builder.Services.AddAuthorization();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+// Configura autenticação, authorização e mapeamento dos end point para usar a verificação e autorizar o acesso com o Token 
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
