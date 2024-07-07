@@ -12,8 +12,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="8.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
-    <PackageReference Include="Microsoft.EntityframeworkCore" Version="8.0.5" />
-    <PackageReference Include="Microsoft.EntityframeworkCore.Design" Version="8.0.5">
+    <PackageReference Include="Microsoft.EntityframeworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityframeworkCore.Design" Version="8.0.6">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>

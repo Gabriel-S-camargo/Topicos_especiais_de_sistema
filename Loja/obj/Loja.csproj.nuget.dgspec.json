@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj": {}
+    "F:\\Programação\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj": {
+    "F:\\Programação\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj",
+        "projectUniqueName": "F:\\Programação\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj",
         "projectName": "Loja",
-        "projectPath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Documents\\Programacao\\Topicos_especiais_de_sistema\\Loja\\obj\\",
+        "projectPath": "F:\\Programação\\Topicos_especiais_de_sistema\\Loja\\Loja.csproj",
+        "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
+        "outputPath": "F:\\Programação\\Topicos_especiais_de_sistema\\Loja\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -69,13 +69,13 @@
             },
             "Microsoft.EntityframeworkCore": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityframeworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Pomelo.EntityframeworkCore.MySql": {
               "target": "Package",
@@ -105,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

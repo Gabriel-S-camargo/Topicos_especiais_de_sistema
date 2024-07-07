@@ -1,3 +1,14 @@
+// Pacotes Entity Frameworkdotnet
+
+// dotnet tool install --global dotnet-ef
+// dotnet add package Microsoft.EntityframeworkCore.Design
+// dotnet add package Microsoft.EntityframeworkCore
+// dotnet add package Pomelo.EntityframeworkCore.MySql
+
+// pacotes Token JWT 
+
+// dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+
 using Microsoft.AspNetCore.Mvc;
 using Loja.Models;
 using Loja.Services;
